@@ -13,9 +13,7 @@ const Navbar = () => {
       <NavLink to="/merch" className="merch-link" activeClassName="active">Merch</NavLink>
       <NavLink to="/about" className="about-link" activeClassName="active">About</NavLink>
       <NavLink to="/info" className="info-link" activeClassName="active">Info</NavLink>
-      <button className="icon" onClick={toggleIsOpen} aria-label="Toggle navigation">
-        <i className="fa fa-bars"></i>
-      </button>
+      
     </nav>
   );
 };

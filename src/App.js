@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import HomePage from './components/HomePage';
+import Homepage from './components/Homepage';
 import Login from './components/Login';
 import Game from './components/Game';
 import Merch from './components/Merch';
@@ -17,7 +17,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Login />} />
-            <Route path="/home" element={<HomePage />} />
+            <Route path="/home" element={<Homepage />} />
             <Route path="/game" element={<Game />} />
             <Route path="/merch" element={<Merch />} />
             <Route path="/about" element={<About />} />

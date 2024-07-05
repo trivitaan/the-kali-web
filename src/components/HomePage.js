@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import keyIcon from '../assets/images/Game-Btn.png';
 import banner from '../assets/images/banner.png';
 import d1Button from '../assets/images/D1-Btn.png';
@@ -13,11 +14,11 @@ const Homepage = () => {
             <div className="keyhole-container">
                 <img src={banner} alt="Keyhole Layout" className="keyhole-background" />
                 <div className="nav-buttons">
-                    <a href="info.html"><img src={infoButton} alt="Info" /></a>
-                    <a href="key.html"><img src={keyIcon} alt="Key" /></a>
-                    <a href="AR.html"><img src={ARButton} alt="AR" /></a>
-                    <a href="social.html"><img src={SM} alt="Social Media" /></a>
-                    <a href="settings.html"><img src={d1Button} alt="Settings" /></a>
+                    <Link to="/info"><img src={infoButton} alt="Info" /></Link>
+                    <Link to="/home"><img src={keyIcon} alt="Key" /></Link>
+                    <Link to="/game"><img src={ARButton} alt="Game" /></Link>
+                    <Link to="/about"><img src={SM} alt="About Us" /></Link>
+                    <Link to="/merch"><img src={d1Button} alt="Merch" /></Link>
                 </div>
             </div>
         </div>
